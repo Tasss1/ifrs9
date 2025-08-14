@@ -1,0 +1,23 @@
+[
+  { "model": "ledger.balancearticle", "pk": 1, "fields": { "name": "Денежные средства" } },
+  { "model": "ledger.balancearticle", "pk": 2, "fields": { "name": "Кредиты и задолженность" } },
+  { "model": "ledger.balancearticle", "pk": 3, "fields": { "name": "Собственный капитал" } },
+
+  { "model": "ledger.balancegroup", "pk": 1, "fields": { "article": 1, "name": "Касса" } },
+  { "model": "ledger.balancegroup", "pk": 2, "fields": { "article": 2, "name": "Краткосрочные кредиты" } },
+  { "model": "ledger.balancegroup", "pk": 3, "fields": { "article": 2, "name": "Счета клиентов" } },
+  { "model": "ledger.balancegroup", "pk": 4, "fields": { "article": 3, "name": "Уставной капитал" } },
+
+  { "model": "ledger.account", "pk": 1, "fields": {
+    "number": "1011000001", "name": "Касса", "type": "asset", "group": 1, "balance": "0.00"
+  }},
+  { "model": "ledger.account", "pk": 2, "fields": {
+    "number": "2211000001", "name": "Краткосрочные кредиты", "type": "asset", "group": 2, "balance": "0.00"
+  }},
+  { "model": "ledger.account", "pk": 3, "fields": {
+    "number": "2211000002", "name": "Счета клиентов", "type": "mixed", "group": 3, "balance": "0.00"
+  }},
+  { "model": "ledger.account", "pk": 4, "fields": {
+    "number": "5000000001", "name": "Уставной капитал", "type": "liability", "group": 4, "balance": "0.00"
+  }}
+]

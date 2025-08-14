@@ -1,0 +1,9 @@
+[project]
+name = "ifrs9-ledger"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+dependencies = [
+  "Django>=4.2,<5.2",
+  "psycopg2-binary>=2.9; sys_platform != 'win32' or platform_system == 'Linux'",
+]

@@ -1,0 +1,12 @@
+[
+  { "model": "ledger.transaction", "pk": 1, "fields": {
+    "created_at": "2025-01-01T10:00:00Z",
+    "description": "Взнос в кассу",
+    "debit_account": 1,
+    "credit_account": 4,
+    "amount": "100000.00",
+    "is_reversal": false,
+    "reversed_transaction": null,
+    "annulled": false
+  }}
+]
